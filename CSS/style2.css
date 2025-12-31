@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.a{
+    border: 20px solid yellow;
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    
+}
+.b{
+    border: 10px solid red;
+    width: 250px;
+    height: 250px;
+    margin: 100px;
+}
+.c{
+    border: 10px solid green;
+    width: 125px;
+    height: 125px;
+    margin: 50px;
+}
