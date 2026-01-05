@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <style>
+      p::first-line {
+        font-weight: bold;
+      }
+      p::first-letter {
+        color: red;
+        text-transform: uppercase;
+        font-size: xx-large;
+      }
+      blockquote::before {
+        content: "''";
+        font-size: 2em;
+        color: #dc1e1e;
+      }
+      blockquote::after {
+        content: "''";
+        font-size: 2em;
+        color: #dc1e1e;
+      }
+.heading-container {
+  position: relative;
+  height: 60px;
+}
+
+
+.heading-container h4:first-child {
+  margin: 0;
+}
+
+
+h4 + h4 {
+  position: absolute;
+  top: 0;
+  left: 180px;
+  background-color: orange;
+  color: white;
+  padding: 8px;
+  margin: 0;
+}
+ </style>
+  </head>
+  <body>
+    <div>
+      <h1>Wibur's Web</h1>
+      <h3>Edward Eleven</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloremque
+        aut neque, sapiente eveniet fugit fugiat itaque ipsum incidunt tempora
+        eos consequatur ipsam ratione, error, est eaque officiis quaerat id!
+      </p>
+      <blockquote>Heloo Haiiiiiii</blockquote>
+    </div>
+    <div class="heading-container">
+      <h4>First Heading</h4>
+      <h4>Second Heading</h4>
+    </div>
+  </body>
+</html>
