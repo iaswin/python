@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .one {
+        width: 500px;
+        height: 500px;
+      }
+
+      img[src$=".jpg"] {
+        border-radius: 0 20px 0 20px;
+      }
+      a[href^="https"] {
+        color: red;
+      }
+      @media (max-width: 600px) {
+        .one {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        .one h2, .one a
+        {
+          font-size: 14px;
+        }
+      }
+
+      @media (orientation: portrait) {
+        body {
+          background-color: lightyellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <h2>HAKHAH</h2>
+      <img
+        src="https://media.istockphoto.com/id/1157655660/photo/generic-red-suv-on-a-white-background-side-view.jpg?s=612x612&w=0&k=20&c=ecrvXZhimUHnYES-kx7L5b-TDtRU5kAFPpNm0ZtAp1Y="
+      />
+      <a href="https://www.google.com/">Read-More</a>
+    </div>
+    <div class="one">
+      <h2>HAKHAH</h2>
+      <img
+        src="./b9122e28-3c73-46d7-aec0-45e656d212fe.jpg"
+        width="500px"
+        height="500px"
+      />
+      <a href="">Read-More</a>
+    </div>
+    <div class="one">
+      <h2>HAKHAH</h2>
+      <img
+        src="https://media.istockphoto.com/id/1157655660/photo/generic-red-suv-on-a-white-background-side-view.jpg?s=612x612&w=0&k=20&c=ecrvXZhimUHnYES-kx7L5b-TDtRU5kAFPpNm0ZtAp1Y="
+      />
+      <a href="https://www.google.com/">Read-More</a>
+    </div>
+  </body>
+</html>
