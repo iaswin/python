@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online store</title>
+</head>
+<body>
+    <p>The total earning is:</p>
+    <p id="sales"></p>
+     <p>The total earning updated is:</p>
+     <p id="saless"></p>
+
+<script>
+    var a=3;
+    var b=5;
+    var tshirts=400;
+    var caps=150;
+
+    var total_earns=b*tshirts+a*caps;
+    document.getElementById("sales").innerHTML=total_earns;
+    tshirts=450;
+    var total_earns=b*tshirts+a*caps;
+    document.getElementById("saless").innerHTML=total_earns;
+</script>
+    
+</body>
+</html>
