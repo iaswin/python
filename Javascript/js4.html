@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function bioclean(){
+             var trimmedusername=username.trim();
+              var trimmedbio=bio.trim();
+              console.log("the bio before cleanup "+trimmedbio.length);
+            var loweredusername=username.toLowerCase();
+            var loweredbio=bio.toLowerCase();
+            var replace=bio.replace(/Javascript/gi,"JS")
+            console.log("the trimmed bio"+trimmedbio);
+            console.log("the trimmed username"+trimmedusername);
+            console.log("the lower bio"+loweredbio);
+            console.log("the lower username"+loweredusername);
+            console.log("the replaced string"+replace);
+
+
+
+        }
+
+
+        var username="   ASWIN   ";
+        var bio=" I LOVE coding! JavaScript is Great!!! ";
+        bioclean();
+        var total=bio.length;
+        console.log(total);
+    </script>
+    
+</body>
+</html>
