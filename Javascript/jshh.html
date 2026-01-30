@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="idd"></p>
+    <p id="iddd"></p>
+    <button onclick="prof()">Show</button>
+    <script>
+      function prof() {
+        let user = {
+          username: "aswin",
+          age: 20,
+        };
+        var p = user.age >= 18 ? "Acess Granted" : "Acess Denied";
+        document.getElementById("idd").innerHTML = p;
+        var x = "age" in user;
+        console.log(x);
+        document.getElementById("iddd").innerHTML = x;
+
+        delete user.age;
+
+        console.log(user);
+        
+      }
+    </script>
+  </body>
+</html>
