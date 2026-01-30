@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="idd"></p>
+     <p id="iddd"></p>
+     <p id="aa"></p>
+    <button onclick="cart()">Show Status Of Order</button>
+    <script>
+        function cart(){
+              let order={
+            itemName:"Pen",
+            isDelivered:true,
+            daysSinceDelivery:7
+
+        };
+        var x=((order.daysSinceDelivery==7)&&(order.isDelivered==true)) ? "Eligble for Return":"Return Period Expired";
+        document.getElementById("idd").innerHTML=x;
+           var p=(order.itemName) ? "Exist":"Not-Exist";
+        document.getElementById("iddd").innerHTML=p;
+
+
+                delete order.daysSinceDelivery;
+            console.log(order);
+                 
+        }
+
+
+
+     
+
+        
+      
+    </script>
+    
+</body>
+</html>
